@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Icons import කරන්න
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; 
 
 
 const ContactPage = () => {
@@ -37,10 +37,10 @@ const ContactPage = () => {
     e.preventDefault();
     const newErrors = validateForm();
     if (Object.keys(newErrors).length === 0) {
-      // Form is valid, you can handle the submission here.
+      
       console.log('Form submitted successfully:', formData);
       setIsSubmitted(true);
-      // Reset form after submission
+      
       setFormData({ name: '', email: '', message: '' });
       setErrors({});
     } else {
