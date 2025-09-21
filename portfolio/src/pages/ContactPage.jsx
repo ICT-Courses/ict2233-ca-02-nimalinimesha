@@ -1,4 +1,4 @@
-// src/pages/ContactPage.jsx
+
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Icons import කරන්න
 
