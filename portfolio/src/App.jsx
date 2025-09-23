@@ -22,7 +22,11 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         </main>
-        <Footer/>
+        <footer className="footer">
+
+© 2025 Your Name. All Rights Reserved.
+
+</footer> 
       </div>
     </BrowserRouter>
   );
