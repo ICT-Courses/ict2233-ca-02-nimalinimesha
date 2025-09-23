@@ -1,4 +1,4 @@
-/* src/pages/ContactPage.css */
+
 
 .contact-page {
   padding: 4rem 2rem;
@@ -147,7 +147,7 @@
   transform: scale(1.1);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
