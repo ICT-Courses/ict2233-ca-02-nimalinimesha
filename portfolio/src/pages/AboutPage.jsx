@@ -12,17 +12,25 @@ const AboutPage = () => {
       <section className="about-section">
         <h2>My Background</h2>
         <p>
-          I am a passionate web application developer with a strong foundation in modern web technologies. I started my journey in web development... (Replace this with your personal story. Talk about what inspired you to get into this field.)
+         I’m Nimali Nimesha, a 2nd-year undergraduate student at the University of Sri Jayewardenepura, currently studying in the ICT Department. I'm deeply passionate about frontend development, graphic design, and especially UI/UX design.
+
+From early on, I was fascinated by how design and functionality come together to create seamless digital experiences. This passion led me to explore web technologies and design principles that make interfaces both beautiful and user-friendly.
+
+I’ve gained hands-on experience with tools and technologies like React, Node.js, MongoDB, MySQL, and C#, and I enjoy combining development with creative design thinking.
+
+My ultimate goal is to become a professional UI/UX Designer, crafting digital experiences that are not only visually appealing but also intuitive and meaningful for users.
+
         </p>
       </section>
 
       <section className="about-section">
         <h2>Education</h2>
         <div className="education-item">
-          <h3>Your Degree Name</h3>
-          <p>University/College Name | 2020 - 2023</p>
+          <h3>Bachelor of Science in Information and Communication Technology (BSc in ICT) </h3>
+          <p>University of Sri Jayewardenepura | 2024 – Present </p>
           <p>
-            (Optional: Add a brief description of your studies, such as key courses or special projects.)
+            Currently pursuing my undergraduate degree in ICT. Focused on key subjects such as Web Development, Programming, Database Management, and Human-Computer Interaction. Engaged in several academic projects related to frontend technologies and UI/UX design.
+
           </p>
         </div>
         {/* You can add more education items here if needed */}
@@ -34,10 +42,10 @@ const AboutPage = () => {
           <div className="skills-list">
             <h3>Technical Skills</h3>
             <ul>
-              <li>JavaScript, React.js, Node.js</li>
-              <li>HTML5, Modern CSS (Flexbox, Grid)</li>
+              <li>JavaScript, React.js, Node.js,c#,python</li>
+              <li>HTML, Modern CSS (Flexbox, Grid)</li>
               <li>Version Control (Git, GitHub)</li>
-              <li>API Integration (REST, GraphQL)</li>
+              <li>Graphic Design</li>
               <li>Databases (MongoDB, SQL)</li>
             </ul>
           </div>
