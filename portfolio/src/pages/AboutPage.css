@@ -76,7 +76,6 @@
   color: #ccc;
 }
 
-/* Education Section */
 .education-item {
   background-color: #383838;
   padding: 1.5rem;
@@ -147,7 +146,7 @@
 .skills-list li:nth-child(4) { animation-delay: 0.8s; }
 .skills-list li:nth-child(5) { animation-delay: 1s; }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .skills-container {
     flex-direction: column;

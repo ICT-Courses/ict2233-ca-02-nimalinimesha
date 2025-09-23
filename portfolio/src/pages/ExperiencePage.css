@@ -11,7 +11,7 @@
 
 .experience-page {
   padding: 4rem 2rem;
-  max-width: 1200px;/* src/pages/ExperiencePage.css */
+  max-width: 1200px;
 
 .experience-page {
   padding: 4rem 2rem;
@@ -48,7 +48,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-  /* Initial state for animation */
+  
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInFromBottom 1s forwards;
@@ -72,7 +72,7 @@
 }
 
 .experience-item ul {
-  list-style-type: '→ '; /* Custom list marker */
+  list-style-type: '→ '; 
   padding-left: 1.5rem;
   margin: 0;
 }
@@ -84,7 +84,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Keyframe animation for a staggered fade-in effect */
+
 @keyframes fadeInFromBottom {
   from {
     opacity: 0;
@@ -96,13 +96,13 @@
   }
 }
 
-/* Staggered animation delay for each item */
+
 .experience-item:nth-child(1) { animation-delay: 0.2s; }
 .experience-item:nth-child(2) { animation-delay: 0.5s; }
 .experience-item:nth-child(3) { animation-delay: 0.8s; }
-/* Add more for additional items */
 
-/* Responsive adjustments */
+
+
 @media (max-width: 768px) {
   .experience-item h3 {
     font-size: 1.5rem;
