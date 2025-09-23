@@ -47,7 +47,8 @@ const HomePage = () => {
           Undergraduate
         </p>
         <p className="hero-intro">
-          A brief introduction about yourself and what you do. You can mention your passion for web development, your skills, and what kind of projects you enjoy working on.
+           I'm a passionate frontend developer and UI/UX enthusiast currently pursuing my BSc in ICT at the University of Sri Jayewardenepura. I enjoy turning complex problems into simple, beautiful, and intuitive web designs. I specialize in React, Node.js, MongoDB, MySQL, C#, and I love working on interactive, responsive web applications. I'm always eager to learn new technologies and bring creative ideas to life through code and design.
+
         </p>
         <div className="hero-buttons">
           <a href="/projects" className="btn btn-primary">View My Work</a>
