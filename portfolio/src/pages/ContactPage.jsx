@@ -104,13 +104,13 @@ const ContactPage = () => {
       <section className="contact-links-section">
         <h2>Find me on</h2>
         <div className="social-icons-container">
-          <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/nimalinimesha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub className="social-icon" />
           </a>
-          <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/nimali-nimesha-b57655327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="mailto:your.email@example.com" aria-label="Email">
+          <a href="nimalisenanayaka@gmail.com" aria-label="Email">
             <FaEnvelope className="social-icon" />
           </a>
         </div>

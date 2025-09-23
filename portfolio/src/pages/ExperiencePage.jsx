@@ -14,21 +14,13 @@ const ExperiencePage = () => {
 
       <section className="experience-section">
         <div className="experience-item">
-          <h3>Web Developer</h3>
-          <h4>ABC Solutions | 2023 - Present</h4>
+          <h3>Trainee – Customer Service</h3>
+          <h4>Bank of Ceylon (BOC) | 2023 </h4>
           <ul>
-            <li>Developed and maintained a company website using React and Node.js.</li>
-            <li>Collaborated with a team of developers to implement new features and improve performance.</li>
-            <li>Utilized Git for version control and followed agile development methodologies.</li>
-          </ul>
-        </div>
-        <div className="experience-item">
-          <h3>Junior Front-End Intern</h3>
-          <h4>XYZ Agency | 2022 - 2023</h4>
-          <ul>
-            <li>Assisted in building responsive user interfaces with HTML, CSS, and JavaScript.</li>
-            <li>Gained hands-on experience with component-based architecture in React.</li>
-            <li>Participated in code reviews and learned best practices for writing clean code.</li>
+            <li>Gained hands-on experience in customer service operations within a banking environment.</li>
+            <li>Assisted customers with account inquiries, transactions, and issue resolutions. </li>
+            <li>Improved communication and problem-solving skills through direct client interaction.
+</li>
           </ul>
         </div>
       </section>
