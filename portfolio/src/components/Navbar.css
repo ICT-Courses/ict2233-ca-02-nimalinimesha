@@ -1,13 +1,14 @@
+/* src/components/Navbar.css */
 
 .navbar {
-  width: 100%; 
-  position: fixed; 
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes content to the far left and right */
   align-items: center;
   padding: 1rem 2rem;
   background-color: #333;
@@ -24,12 +25,15 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap; 
+  justify-content: center; /* This is the key change to center the links */
+  flex-grow: 1; /* Allows the links container to take up available space */
   gap: 1.5rem;
 }
 
 .navbar-links li {
-  margin-left: 20px; 
+  /* This margin-left is no longer needed because gap handles spacing */
+  /* You can remove it to avoid extra space on the left */
+  margin-left: 0; 
 }
 
 .navbar-links li a {
@@ -42,8 +46,9 @@
 .navbar-links li a:hover {
   color: #c9c9c9;
 }
+
 @media (max-width: 768px) {
   .navbar-links {
-    gap: 1rem; 
+    gap: 1rem;
   }
 }

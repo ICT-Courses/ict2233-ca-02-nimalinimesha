@@ -2,13 +2,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logoImage from '../assets/dow.jpg';
 
 const Navbar = () => {
   return (
    <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src={"..\assets\download.jpeg"} alt="My Portfolio Logo" />
+          <img src={logoImage} alt="My Portfolio Logo" />
         </Link>
       </div>
       <ul className="navbar-links">
