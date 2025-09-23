@@ -11,7 +11,7 @@ const ProjectsPage = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/YOUR-GITHUB-USERNAME/repos');
+        const response = await fetch('https://api.github.com/users/nimalinimesha/repos');
         if (!response.ok) {
           throw new Error('Failed to fetch projects.');
         }
