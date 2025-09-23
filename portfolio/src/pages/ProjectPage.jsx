@@ -1,8 +1,7 @@
 
-
 import React, { useState, useEffect } from 'react';
-import ProjectCard from '../components/ProjectCard'; 
-import './ProjectsPage.css';
+import ProjectCard from '../components/ProjectCard';
+import './ProjectPage.css';
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState([]);
@@ -10,45 +9,25 @@ const ProjectsPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchGitHubProjects = async () => {
+    const fetchProjects = async () => {
       try {
-        const username = 'nimalinimesha';
-        const response = await fetch(`https://api.github.com/users/${username}/repos`);
-        
+        const response = await fetch('https://api.github.com/users/nimalinimesha/repos');
         if (!response.ok) {
-          throw new Error('Could not fetch projects. Please check your username.');
+          throw new Error('Failed to fetch projects.');
         }
-
         const data = await response.json();
-      
-        const enrichedProjects = data.map(project => {
-          
-          let projectImage = null;
-          let projectDemo = null;
-
-          if (project.name === 'ICT-Courses-Project-1') {
-            projectImage = '/images/project1-image.png';
-            projectDemo = 'https://live-demo-1.com'; 
-          } else if (project.name === 'application-development-ca1-nimalinimesha') {
-            projectImage = '/images/project2-image.jpg';
-            projectDemo = 'https://live-demo-2.com';
-          }
-         
-          
-          return {
-            ...project,
-            image: projectImage,
-            demo: projectDemo
-          };
-        });
-
-        // අදාළ projects පමණක් filter කරගනිමු (උදා: ICT-Courses)
-        const ictProjects = enrichedProjects.filter(project => 
-          project.name.startsWith('ICT-Courses') || project.name.startsWith('Furniture-Hub')
-        );
         
-        setProjects(ictProjects);
-        
+        const formattedProjects = data.slice(0, 3).map(repo => ({
+          id: repo.id,
+          name: repo.name.replace(/-/g, ' '), 
+          description: repo.description || 'No description provided.',
+          github: repo.html_url,
+          demo: repo.homepage,
+          
+          image: `https://via.placeholder.com/400x250.png?text=${repo.name}`
+        }));
+
+        setProjects(formattedProjects);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -56,29 +35,20 @@ const ProjectsPage = () => {
       }
     };
 
-    fetchGitHubProjects();
+    fetchProjects();
   }, []);
 
-  if (loading) {
-    return <div className="loading">Projects are loading...</div>;
-  }
-
-  if (error) {
-    return <div className="error">Error: {error}</div>;
-  }
+  if (loading) return <div className="loading">Loading projects...</div>;
+  if (error) return <div className="error">Error: {error}</div>;
 
   return (
     <div className="projects-page">
-      <h1>My GitHub Projects</h1>
-      <div className="projects-container">
-        {projects.length > 0 ? (
-          projects.map(project => (
-           
-            <ProjectCard key={project.id} project={project} />
-          ))
-        ) : (
-          <p>No relevant projects found.</p>
-        )}
+      <h1>My Projects</h1>
+      <p>A showcase of my work and personal projects.</p>
+      <div className="projects-grid">
+        {projects.map(project => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
     </div>
   );
