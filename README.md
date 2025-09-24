@@ -3,6 +3,11 @@ A project description.
 
  Installation and usage instructions. 
     Node.js and npm installed on your machine.
+    create vite project:npm create vite@latest 
+    Install the required dependencies:npm install
+     To navigate without page reloads:npm install react-router-dom
+     Animation Library:npm install framer-motion
+     npm install framer-motion
 
 
 
