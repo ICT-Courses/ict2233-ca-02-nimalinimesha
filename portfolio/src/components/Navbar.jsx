@@ -1,34 +1,26 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaMoon, FaSun } from 'react-icons/fa'; 
 import './Navbar.css';
-import logoImage from '../assets/dow.jpg';
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, isDarkMode }) => {
   return (
-   <nav className="navbar">
-      <div className="navbar-logo">
-        <Link to="/">
-          <img src={logoImage} alt="My Portfolio Logo" />
-        </Link>
+    <nav className="navbar">
+      <div className="logo">
+        <Link to="/">My Portfolio</Link>
       </div>
-      <ul className="navbar-links">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/experience">Experience</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/experience">Experience</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
+      {}
+      <button onClick={toggleTheme} className="theme-toggle">
+        {isDarkMode ? <FaSun /> : <FaMoon />}
+      </button>
     </nav>
   );
 };
