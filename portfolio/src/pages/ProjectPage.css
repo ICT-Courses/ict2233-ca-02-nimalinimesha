@@ -1,38 +1,35 @@
-/* src/pages/ProjectPage.css */
 
-/* සම්පූර්ණ section එක සඳහා styles */
 .projects-section {
   padding: 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* සියලුම අංග මැදට ගෙන එයි */
-  background-color: #f0f2f5; /* Background වර්ණය */
+  align-items: center; 
+  background-color: #f0f2f5;
 }
 
-/* My Projects යන ශීර්ෂය සඳහා styles */
+
 .projects-title {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 3rem;
-  color: #333; /* අකුරු වර්ණය */
+  color: #333; 
 }
 
-/* ව්‍යාපෘති කාඩ්පත් එකතු කරන container එක සඳහා styles */
+
 .projects-grid-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center; /* අංග තිරස්ව මැදට ගෙන එයි */
+  justify-content: center; 
   width: 100%;
   max-width: 1200px;
 }
 
-/* Project Card එක සඳහා styles */
 .project-card {
-  background-color: #fff; /* Card එකේ background වර්ණය */
+  background-color: #fff; 
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -42,20 +39,20 @@
   min-width: 280px;
 }
 
-/* Card එක මත මවුසය තැබූ විට වෙනස් වන styles */
+
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Card එකේ රූපය සඳහා styles */
+
 .project-card-image {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* රූපය නිවැරදිව පෙන්නුම් කිරීමට */
+  object-fit: cover; 
 }
 
-/* Card එකේ අන්තර්ගතය සඳහා styles */
+
 .project-card-content {
   padding: 1.5rem;
   text-align: left;
@@ -65,7 +62,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #007bff; /* ශීර්ෂයේ වර්ණය */
+  color: #007bff; 
 }
 
 .project-card-description {

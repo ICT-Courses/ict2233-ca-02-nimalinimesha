@@ -1,26 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
-import Project1 from "../assets/book.jpg";
+import Project1 from "../assets/image.png";
 import Project2 from "../assets/ferti.jpg";
-import Project3 from "../assets/download.jpg";
-import './ProjectPage.css'; // ඔබට අදාළ CSS ගොනුව import කරගැනීමට
+import Project3 from "../assets/furnitur.png";
+import './ProjectPage.css'; 
 
 const projects = [
   {
     id: 1,
-    title: "Weather Forecast Site",
+    title: "Book library",
     description: "Weather forecasting Desktop app using OpenWeather API and C#.",
     image: Project1,
-    github: "https://github.com/ICT-Courses/application-development-ca1-Shehani28",
+    github: "https://github.com/ICT-Courses/ict2233-ca-01-nimalinimesha",
     demo: "",
   },
   {
     id: 2,
-    title: "Coffee Menu Website",
+    title: "fertilizer magagement system",
     description: "A simple and stylish coffee shop menu website built with React+js",
     image: Project2,
-    github: "https://github.com/ICT-Courses/ict2233-ca-01-Shehani28",
+    github: "https://github.com/ICT-Courses/application-development-ca1-nimalinimesha",
     demo: "",
   },
   {
@@ -28,12 +28,12 @@ const projects = [
     title: "Furniture Hub Website",
     description: "An e-commerce style furniture website showcasing modern designs.",
     image: Project3,
-    github: "",
-    demo: "https://drive.google.com/file/d/1MGukgvHDIKE4DkX2jfwEx0vvqHBT6hyv/view?usp=drivesdk",
+    github: "https://github.com/HasiniPrabodika/Furniture-Hub",
+    demo: "",
   },
 ];
 
-// Framer Motion සඳහා animation විචල්‍යයන් (variants) නිර්මාණය කිරීම
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
