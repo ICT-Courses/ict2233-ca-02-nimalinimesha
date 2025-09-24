@@ -53,9 +53,12 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
-        
-        <Footer />
-      </div>
+        <footer>
+        <div className="footer-bottom">
+          <p>© 2025 Nimali. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
     </BrowserRouter>
   );
 }
