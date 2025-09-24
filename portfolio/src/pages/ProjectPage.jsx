@@ -11,7 +11,7 @@ const projects = [
   {
     id: 1,
     title: "Book library",
-    description: "Weather forecasting Desktop app using OpenWeather API and C#.",
+    description: "This is a  book library management system built with React and Node.js..",
     image: Project1,
     github: "https://github.com/ICT-Courses/ict2233-ca-01-nimalinimesha",
     demo: "",
@@ -19,7 +19,7 @@ const projects = [
   {
     id: 2,
     title: "fertilizer magagement system",
-    description: "Weather forecasting Desktop app using OpenWeather API and C#.",
+    description: "This is a C# application using MySQL Workbench for a fertilizer management system. It efficiently tracks inventory and sales data.",
     image: Project2,
     github: "https://github.com/ICT-Courses/application-development-ca1-nimalinimesha",
     demo: "",
@@ -27,7 +27,7 @@ const projects = [
   {
     id: 3,
     title: "Furniture Hub Website",
-    description: "An e-commerce style furniture website showcasing modern designs.",
+    description: "This e-commerce website is built with HTML, CSS, and JavaScript, with MongoDB for data storage. It allows users to browse and purchase furniture.",
     image: Project3,
     github: "https://github.com/HasiniPrabodika/Furniture-Hub",
     demo: "",
@@ -35,7 +35,7 @@ const projects = [
   {
     id: 4,
     title: "Portfolio website",
-    description: "An e-commerce style furniture website showcasing modern designs.",
+    description: "This is a professional portfolio website built with React and Vite for a fast development experience. It features a modern, responsive design styled with plain CSS, showcasing my projects and skills..",
     image: Project4,
     github: "https://github.com/ICT-Courses/ict2233-ca-02-nimalinimesha",
     demo: "",
