@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; 
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './ContactPage.css';
 
 const ContactPage = () => {
@@ -33,18 +32,41 @@ const ContactPage = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validateForm();
     if (Object.keys(newErrors).length === 0) {
-      
-      console.log('Form submitted successfully:', formData);
       setIsSubmitted(true);
-      
-      setFormData({ name: '', email: '', message: '' });
-      setErrors({});
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "7a6b8a09-38f8-4c7e-b4a7-d76285eefaf2", // මෙතන ඔබේ access key එක දාන්න
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        console.log("Form submitted successfully:", data);
+        alert("Thank you for your message! I will get back to you soon.");
+        setFormData({ name: '', email: '', message: '' });
+        setErrors({});
+      } else {
+        console.error("Submission failed:", data);
+        alert("There was an error submitting your form. Please try again.");
+        setIsSubmitted(false);
+      }
     } else {
       setErrors(newErrors);
+      setIsSubmitted(false);
     }
   };
 
@@ -107,10 +129,10 @@ const ContactPage = () => {
           <a href="https://github.com/nimalinimesha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub className="social-icon" />
           </a>
-          <a href="https://www.linkedin.com/in/nimali-nimesha-b57655327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/nimali-nimesha-b57655327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="nimalisenanayaka@gmail.com" aria-label="Email">
+          <a href="mailto:nimalisenanayaka@gmail.com" aria-label="Email">
             <FaEnvelope className="social-icon" />
           </a>
         </div>
