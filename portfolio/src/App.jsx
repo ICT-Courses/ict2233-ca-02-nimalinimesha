@@ -1,7 +1,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <Router basename="/ict2233-ca-02-nimalinimesha">
+    <BrowserRouter>
       <div className="app-container">
         {}
         <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} /> 
@@ -59,7 +59,7 @@ function App() {
         </div>
       </footer>
     </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
