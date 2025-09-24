@@ -1,7 +1,7 @@
-// src/components/ProjectCard.jsx
+
 
 import React from "react";
-// import ProjectPage.css or import from a dedicated css file for the card
+
 
 const ProjectCard = ({ title, description, image, github, demo }) => {
   return (
