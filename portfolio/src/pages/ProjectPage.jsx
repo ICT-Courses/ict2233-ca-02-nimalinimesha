@@ -4,6 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import Project1 from "../assets/image.png";
 import Project2 from "../assets/ferti.jpg";
 import Project3 from "../assets/furnitur.png";
+import Project4 from "../assets/port.png";
 import './ProjectPage.css'; 
 
 const projects = [
@@ -18,7 +19,7 @@ const projects = [
   {
     id: 2,
     title: "fertilizer magagement system",
-    description: "A simple and stylish coffee shop menu website built with React+js",
+    description: "Weather forecasting Desktop app using OpenWeather API and C#.",
     image: Project2,
     github: "https://github.com/ICT-Courses/application-development-ca1-nimalinimesha",
     demo: "",
@@ -29,6 +30,14 @@ const projects = [
     description: "An e-commerce style furniture website showcasing modern designs.",
     image: Project3,
     github: "https://github.com/HasiniPrabodika/Furniture-Hub",
+    demo: "",
+  },
+  {
+    id: 4,
+    title: "Portfolio website",
+    description: "An e-commerce style furniture website showcasing modern designs.",
+    image: Project4,
+    github: "https://github.com/ICT-Courses/ict2233-ca-02-nimalinimesha",
     demo: "",
   },
 ];
