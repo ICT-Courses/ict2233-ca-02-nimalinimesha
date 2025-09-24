@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <Router basename="/ict2233-ca-02-nimalinimesha">
       <div className="app-container">
         {}
         <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} /> 
@@ -59,7 +59,7 @@ function App() {
         </div>
       </footer>
     </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
